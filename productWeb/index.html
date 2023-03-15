@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f84cd3a335.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <nav class="navbar navbar-expand-lg bg-dark fs-6">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link text-white" href="#">Home</a>
+              <a class="nav-link text-white" href="#">Product</a>
+              <a class="nav-link text-white" href="#">About</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- CONTENT-1 -->
+
+    <div class="content d-flex">
+      <div
+        class="container-product-list w-50 p-3 border border-top-0 m-2 rounded-1"
+      >
+        <p class="fs-3">Danh sách sản phẩm</p>
+        <div>
+          <table class="table">
+            <thead>
+              <tr class="bg-dark text-light">
+                <th scope="col" class="border">STT</th>
+                <th scope="col" class="border">Tên sản phẩm</th>
+                <th scope="col" class="border">Giá</th>
+                <th scope="col" class="border">Đơn vị tính</th>
+                <th scope="col" class="border text-center">#</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border" style="background-color: #d9d9d9">
+                <th scope="row" class="border">1</th>
+                <td class="border">Iphone</td>
+                <td class="border">120000</td>
+                <td class="border">Cái</td>
+                <td type="button" class="border btn btn-danger bg-danger">
+                  Xoá
+                </td>
+              </tr>
+              <tr class="border">
+                <th scope="row" class="border">2</th>
+                <td class="border">Nokia</td>
+                <td class="border">100000</td>
+                <td class="border">Cái</td>
+                <td type="button" class="border btn btn-danger bg-danger">
+                  Xoá
+                </td>
+              </tr>
+              <tr class="border" style="background-color: #d9d9d9">
+                <th scope="row" class="border">3</th>
+                <td class="border">Samsung Galaxy</td>
+                <td class="border">11000</td>
+                <td class="border">Cái</td>
+                <td type="button" class="border btn btn-danger bg-danger">
+                  Xoá
+                </td>
+              </tr>
+              <tr class="border w-50">
+                <th scope="row" class="border">4</th>
+                <td class="border">Áo thung</td>
+                <td class="border">12000</td>
+                <td class="border">Chiếc</td>
+                <td type="button" class="border btn btn-danger bg-danger">
+                  Xoá
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CONTENT 2  -->
+      <!-- TEN SAN PHAM -->
+      <div class="w-50 p-3 border border-top-0 m-2 rounded-1">
+        <form>
+          <div class="form-group">
+            <p class="fs-3">Thông tin sản phẩm</p>
+            <div class="d-flex">
+              <label class="w-50">Tên sản phẩm:</label>
+              <input
+                type="text"
+                class="form-control w-75"
+                aria-label="Default"
+                placeholder="Nhập tên sản phẩm ..."
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+          </div>
+          <!-- MA SAN PHAM -->
+          <div class="form-group my-3">
+            <div class="d-flex">
+              <label class="w-50">Mã sản phẩm:</label>
+              <input
+                type="text"
+                class="form-control w-75"
+                aria-label="Default"
+                placeholder="Nhập mã sản phẩm ..."
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+          </div>
+          <!-- LOAI SAN PHAM -->
+          <div class="form-group my-3">
+            <div class="d-flex">
+              <label class="w-25">Loại sản phẩm:</label>
+              <div class="d-flex flex-column" style="margin-left: 134px">
+                <div class="d-flex flex-row my-1">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck1"
+                  />
+                  <span class="mx-2">Đồ gia dụng</span>
+                </div>
+                <div class="d-flex flex-column my-1">
+                  <div class="d-flex flex-row">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck1"
+                    />
+                    <span class="mx-2">Đồ điện tử</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-column my-1">
+                  <div class="d-flex flex-row">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck1"
+                    />
+                    <span class="mx-2">Quần áo</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-column my-1">
+                  <div class="d-flex flex-row">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck1"
+                    />
+                    <span class="mx-2">Sách</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- KHUYEN MAI -->
+          <div>
+            <fieldset class="form-group">
+              <div class="row d-flex">
+                <legend class="col-form-label col-sm-2 pt-0 w-25">
+                  Khuyến mãi:
+                </legend>
+                <div class="col-sm-10 w-25" style="margin-left: 128px">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      Đang khuyến mãi
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      Không
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="my-3">
+            <p>Hàng đang hết khuyến mãi</p>
+          </div>
+          <!-- DON VI TINH -->
+          <div class="d-flex my-2">
+            <label class="w-50">Đơn vị tính:</label>
+            <select
+              class="form-select w-75"
+              id="inputGroupSelect04"
+              aria-label="Example select with button addon"
+            >
+              <option selected>Cái</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <!-- GIA SAN PHAM -->
+          <div class="form-group my-3">
+            <div class="d-flex">
+              <label class="w-50">Giá sản phẩm:</label>
+              <input
+                type="text"
+                class="form-control w-75"
+                aria-label="Default"
+                placeholder="Nhập giá sản phẩm ..."
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+          </div>
+          <!-- NGAY NHAP -->
+          <div class="form-group my-3">
+            <div class="d-flex">
+              <label class="w-50">Ngày nhập:</label>
+              <input
+                type="date"
+                class="form-control w-75"
+                aria-label="Default"
+                placeholder="Ngày nhập ..."
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+          </div>
+          <!-- MO TA -->
+          <div class="form-group my-3">
+            <div class="d-flex">
+              <label class="w-50">Mô tả:</label>
+              <textarea
+                class="form-control w-75"
+                placeholder="Mô tả sản phẩm ..."
+                id="floatingTextarea"
+              ></textarea>
+            </div>
+          </div>
+          <!-- Save -->
+          <div class="form-group my-3">
+            <button
+              type="button"
+              class="btn btn-primary"
+              style="margin-left: 363px"
+            >
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="w-100 h-100  text-center fs-5 p-2" style="background-color: 	#353535;">
+      <i class="fas fa-copyright"></i>
+      <span> 2021 Copyright</span>
+    </div>
+  </body>
+</html>
+<script src="./index.js"></script>
